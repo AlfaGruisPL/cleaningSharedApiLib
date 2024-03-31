@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GLOBAL" XmlFormat="27">
+    <Language Code="pl"/>
+    <FailSafeFileCopy Enabled="true"/>
+    <CopyLockedFiles Enabled="false"/>
+    <CopyFilePermissions Enabled="false"/>
+    <FileTimeTolerance Seconds="2"/>
+    <RunWithBackgroundPriority Enabled="false"/>
+    <LockDirectoriesDuringSync Enabled="true"/>
+    <VerifyCopiedFiles Enabled="false"/>
+    <LogFiles MaxAge="30" Format="HTML"/>
+    <ProgressDialog AutoClose="true"/>
+    <OptionalDialogs>
+        <ConfirmStartSync Show="true"/>
+        <ConfirmSaveConfig Show="true"/>
+        <ConfirmSwapSides Show="true"/>
+        <ConfirmCommandMassInvoke Show="true"/>
+        <WarnFolderNotExisting Show="true"/>
+        <WarnFoldersDifferInCase Show="true"/>
+        <WarnUnresolvedConflicts Show="true"/>
+        <WarnNotEnoughDiskSpace Show="true"/>
+        <WarnSignificantDifference Show="true"/>
+        <WarnRecycleBinNotAvailable Show="true"/>
+        <WarnInputFieldEmpty Show="true"/>
+        <WarnDependentFolderPair Show="true"/>
+        <WarnDependentBaseFolders Show="true"/>
+        <WarnDirectoryLockFailed Show="true"/>
+        <WarnVersioningFolderPartOfSync Show="true"/>
+    </OptionalDialogs>
+    <Sounds>
+        <CompareFinished Path=""/>
+        <SyncFinished Path="%ffs_path%\Resources\bell.wav"/>
+        <AlertPending Path="%ffs_path%\Resources\remind.wav"/>
+    </Sounds>
+    <MainDialog>
+        <SearchPanel CaseSensitive="false"/>
+        <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Name" SortAscending="true">
+            <Configurations MaxSize="100" LastSelected="%ffs_path%\SyncSettings.ffs_batch">
+                <Item LastSync="0" Result="Stopped" Config="%ffs_path%\LastRun.ffs_gui" Log="" Items="0" Bytes="0" TotalTime="0" Errors="0" Warnings="0" Color="DDDDDD"/>
+                <Item LastSync="1711893601" Result="Success" Config="%ffs_path%\SyncSettings.ffs_batch" Log="%ffs_path%\Logs\SyncSettings 2024-03-31 160001.598.html" Items="176" Bytes="958682" TotalTime="1148" Errors="0" Warnings="0"/>
+                <Item LastSync="0" Result="Stopped" Config="%ffs_path%\SyncSettings.ffs_gui" Log="" Items="0" Bytes="0" TotalTime="0" Errors="0" Warnings="0"/>
+            </Configurations>
+            <LastUsed>
+                <Item>%ffs_path%\SyncSettings.ffs_batch</Item>
+            </LastUsed>
+        </ConfigPanel>
+        <OverviewPanel ShowPercentage="true" SortByColumn="Bytes" SortAscending="false"/>
+        <FilePanel ShowIcons="true" IconSize="Small" SashOffset="0" FolderPairsMax="6" PathFormatLeft="Relative" PathFormatRight="Relative">
+            <FolderHistoryLeft LastSelected="%ffs_drive%\Praca - projekty\cleaningCompanyApi">
+                <Item>%ffs_drive%\Praca - projekty\cleaningCompanyApi\dist</Item>
+                <Item>%ffs_drive%\Praca - projekty\cleaningCompanyApi</Item>
+                <Item>%ffs_drive%\Praca - projekty\NestApiV2\dist</Item>
+            </FolderHistoryLeft>
+            <FolderHistoryRight LastSelected="">
+                <Item>sftp://mateusz@fenek.tech/mnt/hdd/praca/cleaningCompany/api|chan=10|zlib|pass64=SGFzbG9BZG1pbmE=</Item>
+                <Item>sftp://mateusz@fenek.tech/mnt/hdd/praca|chan=10|zlib|pass64=SGFzbG9BZG1pbmE=</Item>
+            </FolderHistoryRight>
+        </FilePanel>
+        <ManualCopyTo KeepRelativePaths="false" OverwriteIfExists="false">
+            <FolderHistory TargetFolder="" LastSelected=""/>
+        </ManualCopyTo>
+        <DefaultViewFilter Equal="false" Conflict="true" Excluded="false">
+            <Difference LeftOnly="true" RightOnly="true" LeftNewer="true" RightNewer="true" Different="true"/>
+            <Action CreateLeft="true" CreateRight="true" UpdateLeft="true" UpdateRight="true" DeleteLeft="true" DeleteRight="true" DoNothing="true"/>
+        </DefaultViewFilter>
+    </MainDialog>
+    <FolderHistory MaxSize="20"/>
+    <SftpKeyFile LastSelected=""/>
+    <DefaultFilter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLE?\</Item>
+            <Item>\Recovery\</Item>
+            <Item>*\thumbs.db</Item>
+        </Exclude>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+        <TimeSpan Type="None">0</TimeSpan>
+    </DefaultFilter>
+    <VersioningFolderHistory LastSelected=""/>
+    <LogFolder>%ffs_path%\Logs</LogFolder>
+    <LogFolderHistory LastSelected="">
+        <Item>%ffs_path%\Logs</Item>
+    </LogFolderHistory>
+    <EmailHistory MaxSize="10"/>
+    <CommandHistory MaxSize="10"/>
+    <ExternalApps>
+        <Item Label="Show in Explorer">explorer.exe /select, "%local_path%" &amp; exit 0</Item>
+        <Item Label="Open with default application">explorer.exe "%local_path%" &amp; exit 0</Item>
+    </ExternalApps>
+    <LastOnlineCheck>1711884936</LastOnlineCheck>
+    <LastOnlineVersion>13.4</LastOnlineVersion>
+    <WelcomeDialogVersion>13.4</WelcomeDialogVersion>
+    <DpiLayouts>
+        <Layout Scale="125%">
+            <MainWindow Width="1125" Height="750" PosX="230" PosY="135" Maximized="true"/>
+            <ProgressDialog Width="705" Height="620" Maximized="false"/>
+            <Panels>layout2|name=CenterPanel;caption=;state=256;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=567;besth=48;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=TopPanel;caption=Główny pasek;state=2099708;dir=1;layer=2;row=1;pos=0;prop=100000;bestw=832;besth=54;minw=212;minh=54;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProgressPanel;caption=;state=2097662;dir=1;layer=2;row=2;pos=0;prop=100000;bestw=877;besth=111;minw=-1;minh=111;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=FoldersPanel;caption=Pary katalogów;state=2099708;dir=1;layer=2;row=3;pos=0;prop=100000;bestw=-1;besth=101;minw=125;minh=101;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SearchPanel;caption=Znajdź;state=2099710;dir=3;layer=2;row=3;pos=0;prop=100000;bestw=570;besth=32;minw=125;minh=32;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LogPanel;caption=Dziennik;state=6293502;dir=3;layer=2;row=2;pos=0;prop=100000;bestw=750;besth=375;minw=125;minh=125;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ViewFilterPanel;caption=Ustawienia widoku;state=2099708;dir=3;layer=2;row=1;pos=0;prop=100000;bestw=582;besth=58;minw=100;minh=58;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ConfigPanel;caption=Konfiguracja;state=2099196;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=246;besth=95;minw=246;minh=68;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OverviewPanel;caption=Przegląd;state=2099196;dir=4;layer=3;row=0;pos=1;prop=100000;bestw=375;besth=-1;minw=125;minh=125;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=567|dock_size(1,2,1)=54|dock_size(1,2,3)=101|dock_size(3,2,1)=58|dock_size(4,3,0)=377|</Panels>
+            <ConfigPanel>
+                <Item Type="Name" Visible="true" Width="-133" Stretch="1"/>
+                <Item Type="Last" Visible="true" Width="81" Stretch="0"/>
+                <Item Type="Log" Visible="true" Width="52" Stretch="0"/>
+            </ConfigPanel>
+            <OverviewPanel>
+                <Item Type="Tree" Visible="true" Width="-150" Stretch="1"/>
+                <Item Type="Count" Visible="true" Width="75" Stretch="0"/>
+                <Item Type="Bytes" Visible="true" Width="75" Stretch="0"/>
+            </OverviewPanel>
+            <FilePanelLeft>
+                <Item Type="Path" Visible="true" Width="-94" Stretch="1"/>
+                <Item Type="Ext" Visible="false" Width="75" Stretch="0"/>
+                <Item Type="Date" Visible="false" Width="137" Stretch="0"/>
+                <Item Type="Size" Visible="true" Width="94" Stretch="0"/>
+            </FilePanelLeft>
+            <FilePanelRight>
+                <Item Type="Path" Visible="true" Width="-94" Stretch="1"/>
+                <Item Type="Ext" Visible="false" Width="75" Stretch="0"/>
+                <Item Type="Date" Visible="false" Width="137" Stretch="0"/>
+                <Item Type="Size" Visible="true" Width="94" Stretch="0"/>
+            </FilePanelRight>
+        </Layout>
+    </DpiLayouts>
+</FreeFileSync>
